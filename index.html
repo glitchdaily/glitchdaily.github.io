@@ -5,25 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Glitch Daily</title>
 <style>
-  :root { --bg:#0d0d14; --fg:#ececf3; --muted:#9a9ab0; --accent:#ff3d7f; --accent2:#3df0ff; }
+  :root { --bg:#0d0d14; --fg:#ececf3; --muted:#9a9ab0; --accent:#ff3d7f; --accent2:#3df0ff; --yt:#ff0033; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
   main { max-width:680px; margin:0 auto; padding:64px 20px; }
   h1 { font-size:clamp(40px,9vw,64px); margin:0 0 8px; letter-spacing:-1px;
        text-shadow:3px 0 var(--accent),-3px 0 var(--accent2); }
+  h2 { font-size:20px; margin-top:36px; }
   p { color:var(--muted); }
   a { color:var(--accent2); }
-  footer { margin-top:48px; font-size:14px; color:var(--muted); }
+  .yt { display:inline-flex; align-items:center; gap:10px; margin-top:8px; padding:10px 16px; border-radius:10px;
+        background:#1a1a24; color:var(--fg); text-decoration:none; font-weight:600; }
+  .yt svg { width:28px; height:20px; }
+  footer { margin-top:48px; font-size:15px; color:var(--muted); }
+  footer a { margin-right:6px; }
 </style>
 </head>
 <body>
 <main>
   <h1>Glitch Daily</h1>
-  <p>Weird facts, internet mysteries and mind-blowing tech stories — a new short video several times a week.</p>
-  <p>Watch on YouTube: <a href="https://www.youtube.com/@GlitchDailyy">@GlitchDailyy</a></p>
-  <p>Glitch Daily uses a small private tool, “youtube-agent”, to help produce and upload videos to its own YouTube channel through the YouTube API Services.</p>
+  <p>Weird facts, space, animals, history and internet stories, explained in 8–12 minute videos and Shorts, several times a week.</p>
+  <a class="yt" href="https://www.youtube.com/@GlitchDailyy">
+    <svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#ff0033"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>
+    Watch Glitch Daily on YouTube
+  </a>
+
+  <h2>Glitch Daily Publisher</h2>
+  <p>Glitch Daily Publisher is a small private tool used only by the channel owner. It uses the <strong>YouTube API Services</strong> to upload videos and thumbnails to the Glitch Daily YouTube channel and to read that channel’s own statistics. It is not offered to the public.</p>
+  <p>By using Glitch Daily Publisher you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See also the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
   <footer>
     <a href="privacy.html">Privacy Policy</a> ·
+    <a href="terms.html">Terms of Use</a> ·
     Contact: <a href="mailto:maxime.billot.creation@gmail.com">maxime.billot.creation@gmail.com</a>
   </footer>
 </main>
